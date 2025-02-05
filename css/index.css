@@ -1,0 +1,64 @@
+:root {
+    --color-black-first: #000;
+    --color-black-second: #1A1721;
+    --color-black-third: #828282;
+    --color-first: #F25A70;
+    --color-second: #7C5E99;
+    --color-third: #fff;
+    --color-fourth: #4C5B84;
+    --color-fifth: #CF9EFF;
+    --color-error: #BA1F33;
+    --color-sucess: #62C370;
+    --color-warning: #CEB02A;
+
+}
+
+header {
+    background-color: var(--color-black-second);
+    border-bottom: solid 10px var(--color-black-first);
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav {
+    text-align: right;
+}
+
+a {
+    color: var(--color-third);
+    display: inline-flex; 
+    align-items: center;
+    font-size: 20px;
+    font-family: "Fira Code", Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    text-decoration: none;
+    margin-right: 30px;
+    transition:  0.7s;
+}
+
+a::before {
+    content: "";
+    background-color: var(--color-second);
+    height: 10px;
+    width: 10px;
+    margin-right: 10px;
+}
+
+a:hover {
+    transform: scale(1.07);
+    color: var(--color-fifth);
+}
+
+#btn-menu {
+    display: inline-block;
+    background-color: var(--color-second);
+    box-shadow: 5px 5px 0 var(--color-black-first);
+    padding: 18px 20px;
+    margin-right: 0;
+}
+
+#btn-menu:hover {
+    background-color: var(--color-fifth);
+    color: #1A1721;
+}
