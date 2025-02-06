@@ -1,24 +1,35 @@
 :root {
     --color-black-first: #000;
-    --color-black-second: #1A1721;
-    --color-black-third: #828282;
-    --color-first: #F25A70;
-    --color-second: #7C5E99;
-    --color-third: #fff;
-    --color-fourth: #4C5B84;
-    --color-fifth: #CF9EFF;
+    --color-black-second: #30302E;
+    --color-black-third: #0A0A09;
+    --color-white: #FFF;
+    --color-melon: #E0AFA0;
+    --color-linen: #F7ECE1;
+    --color-silver: #BCB8B1;
+    --color-battleship-gray: #8A817C;
+    --color-taupe: #463F3A;
+    --color-cinereous: #886f68;
+    --color-licorice: #311c1f;
     --color-error: #BA1F33;
     --color-sucess: #62C370;
     --color-warning: #CEB02A;
-
 }
 
 header {
-    background-color: var(--color-black-second);
+    background-color: var(--color-licorice);
     border-bottom: solid 10px var(--color-black-first);
     padding: 10px 20px;
     display: flex;
+    align-items: center;
     justify-content: space-between;
+    opacity: 0.9;
+}
+
+h1 {
+    color: var(--color-linen);
+    font-family: 'Russo One';
+    font-size: 22px;
+    font-weight: 400;
 }
 
 nav {
@@ -26,7 +37,7 @@ nav {
 }
 
 a {
-    color: var(--color-third);
+    color: var(--color-melon);
     display: inline-flex; 
     align-items: center;
     font-size: 20px;
@@ -34,31 +45,33 @@ a {
     font-weight: 500;
     text-decoration: none;
     margin-right: 30px;
-    transition:  0.7s;
+    transition: transform 0.7s linear(0 0%, 0.22 2.1%, 0.86 6.5%, 1.11 8.6%, 1.3 10.7%, 1.35 11.8%, 1.37 12.9%, 1.37 13.7%, 1.36 14.5%, 1.32 16.2%, 1.03 21.8%, 0.94 24%, 0.89 25.9%, 0.88 26.85%, 0.87 27.8%, 0.87 29.25%, 0.88 30.7%, 0.91 32.4%, 0.98 36.4%, 1.01 38.3%, 1.04 40.5%, 1.05 42.7%, 1.05 44.1%, 1.04 45.7%, 1 53.3%, 0.99 54.4%, 0.98 57.5%, 0.99 60.7%, 1 68.1%, 1.01 72.2%, 1 86.7%, 1 100%);
 }
 
 a::before {
     content: "";
-    background-color: var(--color-second);
+    background-color: var(--color-linen);
     height: 10px;
     width: 10px;
     margin-right: 10px;
+    text-shadow: 5px 5px 0 var(--color-black-first);
 }
 
 a:hover {
     transform: scale(1.07);
-    color: var(--color-fifth);
+    color: var(--color-white);
 }
 
 #btn-menu {
     display: inline-block;
-    background-color: var(--color-second);
+    color: var(--color-black-third);
+    background-color: var(--color-melon);
     box-shadow: 5px 5px 0 var(--color-black-first);
     padding: 18px 20px;
     margin-right: 0;
 }
 
 #btn-menu:hover {
-    background-color: var(--color-fifth);
-    color: #1A1721;
+    background-color: var(--color-cinereous);
+    color: var(--color-white);
 }
